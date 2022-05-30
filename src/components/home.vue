@@ -628,6 +628,6 @@ h5 {
 }
 
 .textarea {
-  padding: 100px;
+  padding: 50px;
 }
 </style>

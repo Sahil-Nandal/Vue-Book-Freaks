@@ -220,7 +220,7 @@
       <div class="col">
         <h1>Entrepreneurship</h1>
         <h5>“The best way to predict the future is to create it.”</h5>
-        <p>
+        <p class="textarea">
           Entrepreneurship is a kind of domain, about which most of the people
           are curious now-a-days. And why wouldn't they be, its a century formed
           on the back of so many Entrepreneurs like Elon Musk, Steve Jobs, Bill
@@ -262,7 +262,7 @@
       <div class="col">
         <h1>Space</h1>
         <h5>“I would like to die on Mars, just not on impact. -Elon Musk”</h5>
-        <p>
+        <p class="textarea">
           Space is amongst those domains, which can transform the future of
           human civilization. As per the aims of Elon Musk, human civilization
           should be multi-planetary as soon as possible. And not only Elon (and
@@ -302,7 +302,7 @@
           “Read biographies, for that is life without theory. -Benjamin
           Disraell”
         </h5>
-        <p>
+        <p class="textarea">
           Biographies are really important to read, because these books tell you
           all about a persons life, how he/she succeeded in the life, more
           importantly how they tackled various hurdles and many more. A person
@@ -343,7 +343,7 @@
       <div class="col">
         <h1>Self-Help</h1>
         <h5>“Books that talks about life through beautiful fables”</h5>
-        <p>
+        <p class="textarea">
           A successful self-help book author establishes a relationship with you
           by writing a book that's relatively easy to use, makes you feel that
           there's hope for you, shows you that the author understands your
@@ -625,5 +625,9 @@ h5 {
 .card_img {
   padding: 5%;
   width: 13rem;
+}
+
+.textarea {
+  padding: 100px;
 }
 </style>

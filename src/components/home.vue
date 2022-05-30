@@ -623,7 +623,7 @@ h5 {
 }
 
 .card_img {
-  padding: 8%;
+  padding: 5%;
   width: 13rem;
 }
 

@@ -24,9 +24,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="home.html"
-            >Home <span class="sr-only">(current)</span></a
-          >
+          <a class="nav-link" href="home.html">Home </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="novels.html">Novels</a>
@@ -90,9 +88,9 @@
           book, make friends and research together on same interests!
         </h5>
         <section class="buttons">
-          <a href="#" type="button" class="btn btn-outline-success btn-lg"
-            >Review a book!</a
-          >
+          <button class="btn btn-outline-success btn-lg" v-on:click="popup()">
+            Review a Book
+          </button>
           <a href="#" type="button" class="btn btn-outline-success btn-lg"
             >Read reviews!</a
           >
@@ -521,6 +519,9 @@ export default {
   methods: {
     hello() {
       alert("Hii there, how's going?");
+    },
+    popup() {
+      alert('Have you read a book before?');
     },
     changeName() {
       if (this.name == 'Sahil') {

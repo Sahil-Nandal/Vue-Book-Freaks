@@ -91,9 +91,7 @@
           <button class="btn btn-outline-success btn-lg" v-on:click="popup()">
             Review a Book
           </button>
-          <a href="#" type="button" class="btn btn-outline-success btn-lg"
-            >Read reviews!</a
-          >
+          <button class="btn btn-outline-success btn-lg">Read reviews!</button>
         </section>
       </div>
       <div class="col img_cont">
@@ -137,6 +135,7 @@
       <div class="col books">
         <div class="card" style="width: 25rem">
           <img
+            style="width: 50%"
             class="card_img img_cont"
             src="https://images-na.ssl-images-amazon.com/images/I/71VSswnjh9L.jpg"
             class="card-img-top"
@@ -156,6 +155,7 @@
         <br />
         <div class="card" style="width: 25rem">
           <img
+            style="width: 50%"
             class="card_img img_cont"
             src="https://images-na.ssl-images-amazon.com/images/I/71m-MxdJ2WL.jpg"
             class="card-img-top"
@@ -176,6 +176,7 @@
       <div class="col books">
         <div class="card" style="width: 25rem">
           <img
+            style="width: 50%"
             class="card_img img_cont"
             src="https://images-na.ssl-images-amazon.com/images/I/814sKOe+BcL.jpg"
             class="card-img-top"
@@ -195,6 +196,7 @@
         <br />
         <div class="card" style="width: 25rem">
           <img
+            style="width: 50%"
             class="card_img img_cont"
             src="https://4.imimg.com/data4/KM/JQ/GLADMIN-10390523/images-jdbooks-1-90-6e2a88a33b4932fe9422804437eb9430-500x500.jpg"
             class="card-img-top"
@@ -613,6 +615,7 @@ h5 {
 .card {
   border: solid rgba(0, 0, 0, 0.479) 0.2ch;
   transition: 0.2s;
+  margin-left: 100px;
 }
 .card:hover {
   background: rgba(0, 255, 242, 0.548);

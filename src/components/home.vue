@@ -94,14 +94,14 @@
           <button class="btn btn-outline-success btn-lg">Read reviews!</button>
         </section>
       </div>
-      <div class="col img_cont">
+      <div class="col img_cont" id="changeimg">
         <img
           src="https://p4.wallpaperbetter.com/wallpaper/427/799/775/library-artwork-books-wallpaper-preview.jpg"
           alt=""
         />
       </div>
 
-      <div class="col form">
+      <div class="col form" id="form">
         <form>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address: </label>
@@ -558,7 +558,8 @@ export default {
       alert("Hii there, how's going?");
     },
     popup() {
-      alert('Have you read a book before?');
+      const img = document.querySelector('#changeimg');
+      img.style.display="none";
     },
     changeName() {
       if (this.name == 'Sahil') {

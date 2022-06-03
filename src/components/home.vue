@@ -9,7 +9,7 @@
   </header>
   <!-- NAVIGATION BAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">BOOK FREAKS! </a>
+    <a style="margin-left: 50px;" class="navbar-brand" href="#">BOOK FREAKS! </a>
     <button
       class="navbar-toggler"
       type="button"

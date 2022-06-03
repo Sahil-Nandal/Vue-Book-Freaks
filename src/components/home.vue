@@ -560,6 +560,9 @@ export default {
     popup() {
       const img = document.querySelector('#changeimg');
       img.style.display="none";
+
+      const form = document.querySelector('#form');
+      form.style.display="inline";
     },
     changeName() {
       if (this.name == 'Sahil') {
@@ -687,9 +690,11 @@ form {
   border-radius: 10px;
   padding: 10px;
   text-align: left;
+  margin-top: 50px;
 }
 
 .form{
   display: none;
+  
 }
 </style>

@@ -100,6 +100,41 @@
           alt=""
         />
       </div>
+
+      <div class="col form">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address: </label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="">Book Name: </label>
+            <input type="text" id="bookname" class="form-control" />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="">Review: </label>
+            <input type="text" id="bookreview" class="form-control" />
+            <small id="emailHelp" class="form-text text-muted"
+              >Review the book within 500 words.</small
+            >
+          </div>
+          <br />
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
       <div class="col img_cont">
         <img
           src="http://initiativesmagazine.net/wp-content/uploads/2021/02/books-1.jpg"
@@ -629,5 +664,22 @@ h5 {
 
 .textarea {
   padding: 50px;
+}
+
+.form-control {
+  width: 50px;
+}
+
+#bookname,
+#bookreview,
+#email {
+  width: 50%;
+}
+
+form {
+  border: 2px solid #ced4da;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
 }
 </style>

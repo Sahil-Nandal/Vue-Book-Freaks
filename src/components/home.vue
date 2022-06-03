@@ -124,7 +124,7 @@
           <br />
           <div class="form-group">
             <label for="">Review: </label>
-            <input type="text" id="bookreview" class="form-control" />
+            <textarea type="text" id="bookreview" class="form-control" /></textarea>
             <small id="emailHelp" class="form-text text-muted"
               >Review the book within 500 words.</small
             >
@@ -676,10 +676,19 @@ h5 {
   width: 50%;
 }
 
+#bookreview {
+  width: 90%;
+  height: 500%;
+}
+
 form {
-  border: 2px solid #ced4da;
+  border: 5px solid #ced4da;
   border-radius: 10px;
   padding: 10px;
   text-align: left;
+}
+
+.form{
+  display: none;
 }
 </style>

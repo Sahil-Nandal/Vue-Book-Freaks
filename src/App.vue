@@ -73,9 +73,6 @@
       </ul>
     </div>
   </nav>
-  <div id="app">
-    <Home data="Sam:" msg="Welcome to the first app!" />
-  </div>
   <component :is="currentView" />
 </template>
 

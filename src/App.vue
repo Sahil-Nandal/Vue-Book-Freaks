@@ -73,6 +73,7 @@
       </ul>
     </div>
   </nav>
+
   <component :is="currentView" />
 </template>
 

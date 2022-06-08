@@ -15,9 +15,9 @@
           book, make friends and research together on same interests!
         </h5>
         <section class="buttons">
-          <button class="btn btn-outline-success btn-lg" v-on:click="popup()">
-            Review a Book
-          </button>
+          <input type="button" value="Review a Book!" id="ReviewBookbtn" class="btn btn-outline-success btn-lg" v-on:click="popup()">
+            
+          </input>
           <button class="btn btn-outline-success btn-lg">Read reviews!</button>
         </section>
       </div>
@@ -58,7 +58,7 @@
           </div>
           <br />
 
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" v-on:click="reviewSubmit()" href="#/" >Submit</button>
         </form>
       </div>
 
@@ -485,11 +485,32 @@ export default {
       alert("Hii there, how's going?");
     },
     popup() {
+      
       const img = document.querySelector('#changeimg');
-      img.style.display="none";
-
       const form = document.querySelector('#form');
-      form.style.display="inline";
+      
+
+      if(img.style.display!="none"){
+        img.style.display="none";
+        form.style.display="inline";
+        
+      }
+      else{
+        img.style.display="inline";
+        form.style.display="none";
+        
+        
+      }
+
+    },
+    reviewSubmit(){
+      alert("Review submitted successfully");
+      const img = document.querySelector('#changeimg');
+      const form = document.querySelector('#form');
+      img.style.display="inline";
+        form.style.display="none";
+
+
     },
     changeName() {
       if (this.name == 'Sahil') {
@@ -613,11 +634,14 @@ h5 {
 }
 
 form {
-  border: 5px solid #ced4da;
+  border: 0px solid;
   border-radius: 10px;
   padding: 10px;
   text-align: left;
   margin-top: 50px;
+ -webkit-box-shadow: 17px 11px 37px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 17px 11px 37px 2px rgba(0,0,0,0.75);
+box-shadow: 17px 11px 37px 2px rgba(0,0,0,0.75);
 }
 
 .form{
